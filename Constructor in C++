@@ -1,0 +1,33 @@
+A constructor in C++ is a special method that is automatically called when an object of a class is created.
+A constructor has the same name as the class name. 
+It has no return type.
+It is a public type.
+It can be defined inside of a class or outside of a class. 
+
+/* Constructor in C++ */
+
+#include <iostream>
+using namespace std;
+
+class Constructor
+{
+  private:
+  
+  public:
+         Constructor()
+         {
+         cout << "This is Constructor" << endl;
+         }
+  
+};
+
+
+int main()
+{
+ Constructor C1;
+ 
+   
+    return 0;
+}
+
+
