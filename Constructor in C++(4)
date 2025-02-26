@@ -1,0 +1,33 @@
+/* Constructor in C++ */
+
+#include <iostream>
+using namespace std;
+
+class Constructor
+{
+  private:
+          int x,y;
+  
+  public:
+         Constructor()
+         {
+          cout << "Value of x and y" << endl;
+          cin >> x >> y;
+          
+         }
+         void display()
+         {
+           cout << "x = " << x << endl;
+           cout << "y = " << y << endl;
+         }
+};
+
+
+int main()
+{
+ Constructor C1;
+ C1.display();
+ 
+   
+    return 0;
+}
