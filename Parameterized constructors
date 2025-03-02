@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+
+class A
+{
+ private:
+ 
+ public:
+       
+       int x;
+       A(int val)
+       {
+        x = val;
+       }
+ 
+ 
+    
+};
+
+
+int main()
+{
+   A a(10); 
+   cout << a.x << endl; 
+    return 0;
+}
