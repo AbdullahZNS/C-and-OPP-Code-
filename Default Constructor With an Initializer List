@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string> 
+using namespace std;
+
+class Car{
+    
+  private:
+     string brand;
+     int year;
+     
+  public:
+     //Default Constructor with Initializer List
+     Car( ) : brand("Unknown"), year(2025){
+         
+     cout << "Default Constructor" << endl;    
+     }
+     void display()
+     {
+     cout << "Brand: " << brand << " " << "Year: " << year << endl;
+     }
+};
+
+
+int main() {
+   
+   Car myCar; // Default constructor is called automatically
+   myCar.display();
+   
+
+    return 0;
+}
