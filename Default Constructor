@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class rectangle
+{
+ private:
+     int height,width;
+ 
+ public:
+     rectangle()
+     {
+      height = 0;
+      width  = 0;
+     }
+     
+     int area()
+     {
+      return height * width;
+     }
+ 
+};
+
+
+int main()
+{
+ rectangle obj;
+ cout << obj.area() << endl;
+    
+    
+    
+return 0;
+}
