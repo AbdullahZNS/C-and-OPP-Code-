@@ -1,27 +1,33 @@
 #include <iostream>
 using namespace std;
 
-
-class A
-{
- private:
- 
- public:
-       
-       int x;
-       A(int val)
+class rectangle{
+  
+  private:
+       int height,width;
+  
+  public:
+  
+        rectangle(int a, int b) //Parameterized Constructor
        {
-        x = val;
+       height = a;
+       width  = b;
        }
- 
- 
+       
+       int area()
+       {
+        return height * width;
+       }
     
 };
 
 
+
 int main()
 {
-   A a(10); 
-   cout << a.x << endl; 
+ rectangle obj(5,6);    
+ cout << "The area of the rectangle is: " << obj.area() << endl;
+    
+    
     return 0;
 }
