@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class rectangle
+{
+ private:
+     int height;
+     int width;
+ public:
+     void set(int a, int b)
+     {
+      height = a;
+      width  = b;
+     }
+     
+     int area()
+     {
+      return height * width;
+     }
+};
+
+
+int main() {
+  rectangle obj;
+  
+  rectangle* p;
+  p = &obj;
+  
+  p -> set(2,4);
+  cout << p -> area() << endl;
+
+    return 0;
+}
