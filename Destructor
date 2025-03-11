@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class Tutorial
+{
+ public:
+    Tutorial()
+    {
+    cout << "Constructor is called" << endl;
+   }
+   
+   void display()
+   {
+    cout << "This is a display function" << endl;
+   }
+   
+   ~Tutorial()
+   {
+    cout << "Destructor is called" << endl;
+   }
+};
+
+int main() {
+
+Tutorial t;
+t.display();
+
+
+
+    return 0;
+}
