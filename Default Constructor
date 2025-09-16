@@ -3,30 +3,27 @@ using namespace std;
 
 class rectangle
 {
- private:
-     int height,width;
- 
- public:
-     rectangle()
-     {
-      height = 0;
-      width  = 0;
-     }
-     
-     int area()
-     {
-      return height * width;
-     }
- 
-};
+  private:
+  int length;
+  int width;
 
+  public:
+      rectangle()
+      {
+       length = 5;
+       width = 5; 
+      }
+      int display()
+      {
+       return length* width;
+      }
+      
+};
 
 int main()
 {
- rectangle obj;
- cout << obj.area() << endl;
-    
-    
-    
-return 0;
+
+rectangle obj;
+cout << obj.display() << endl;;
+  return 0;
 }
